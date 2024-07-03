@@ -68,10 +68,13 @@ export default class Game {
 
   installHandlers() {
     this.cells.forEach(cell => {
-      cell.element.addEventListener("click", (event) => {
+      let handler = (event) => {
         cell.toggle();
         this.saveState();
-      });
+      }
+      cell.element.addEventListener("click", handler);
+      cell.element.addEventListener("touchstart", handler);
+      cell.element.addEventListener("touchend", e => e.preventDefault());
     });
   }
 

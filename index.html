@@ -1,62 +1,17 @@
 <!doctype html>
 <html lang="en-GB">
   <head>
-    <script src="index.js" type="module"></script>
     <meta charset="utf-8">
     <title>GE 2024 Bingo</title>
-    <style>
-      * { box-sizing: border-box; }
-
-      html, body, #board {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-      html {
-        font-size: 1.8vw;
-        font-face: sans-serif;
-      }
-
-      #board table {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        border-spacing: 1px;
-        border-collapse: collapse;
-
-        tr {
-          flex: 1;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          flex-direction: row;
-          align-items: stretch;
-        }
-
-        td {
-          flex: 1;
-          display: flex;
-          text-align: center;
-          padding: 1em;
-          border: 1px solid #eee;
-        }
-
-        td span {
-          margin: auto;
-        }
-
-        .active {
-          color: #fff;
-          background-color: #4a8;
-        }
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js" type="module"></script>
   </head>
   <body>
     <div id="board"></div>
+    <footer>
+      <a href="/">↻ New card</a>
+      <a href="https://www.map.org.uk/donate/donate-page-2024" target="_blank">🇵🇸 Donate to Medical Aid for Palestinians</a>
+      <a href="https://po-ru.com" target="_blank">Made by Paul Battley</a>
+    </footer>
   </body>
 </html>
